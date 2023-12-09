@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/NG-en-20231127-popsignuptwoweeks-perspective_alpha_website_large\ 1.png);
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 20px;
+    padding: 15px 25px;
+    background-color: #0B0C0F;
+}
+
+.navbar .logo img{
+    width: 150px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 445px;
+    width: 500px;
+    border-radius: 25px;
+    background-color: rgba(11, 12, 15, 0.90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.page{
+    color: #fff;
+    width: 350px;
+    margin: 20px;
+}
+
+
+.page input{
+    width: 350px;
+    height: 35px;
+    color: #fff;
+    background-color: rgba(11, 12, 15, 0.90);
+    border: 1px solid #fff;
+}
+
+.page button{
+    display: flex;
+    padding: 14px 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 20px;
+    background: #0C8CE9;
+    cursor: pointer;
+}
+
+
+footer{
+    padding: 30px 30px;
+background: #050506;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+   
+}
+
+.footer .main{
+    color: #fff;
+}
+
+
+
+.sub span{
+    display: block;
+    color: #0C8CE9;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.line2{
+    margin-left: 65px;
+    margin-top: 30px;
+    width: 1350px;
+    align-self: center;
+}
+
+.afterline{
+    display: flex;
+    justify-content: space-between;
+    color: #0C8CE9;
+}
+
+.last{
+    color: #0C8CE9;
+    display: flex;
+    justify-content: space-between;
+}
+
