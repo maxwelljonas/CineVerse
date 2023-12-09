@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@700&display=swap');
+
+* {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+}
+
+.video-box {
+    position: relative;
+    width: 50%;
+}
+
+.video-box #myvideo {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.arrowicon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.arrowicon svg {
+    width: 50px;
+}
+
+/* .flagicon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.flagicon img {
+    width: 25px;
+} */
