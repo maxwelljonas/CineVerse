@@ -17,23 +17,32 @@
         <h1 class="signin">sign in</h1>
 
         <form class="page">
-            <label for="Email & phonenumber">Email or Phone number</label><br>
-            <input type="number", type="email" id="number" id="email" name="number" name="email" required><br><br>
+            <label for="mixedInput">Enter Email or Number:</label>
+            <input type="text" id="mixedInput" name="mixedInput" placeholder="Type email or number...">
+            <br><br>
         
             <label for="Password">Password</label><br>
-            <input type="password" id="Password" name="Password" required><br><br>
+            <input type="password" id="Password" name="Password" required>
+            <span class="forgot">forgotten password?</span><br><br>
         
             <button type="Sign in">Sign in</button>
+            
+            <div class="forget">
+                <label class="remember">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <span class="checkmark"></span> <!-- The checkmark element -->
+                    Remember me
+                </label>
+                <p class="need">Need help?</p>
+            </div>
+            
+            <div class="dont">
+                Don’t have an account? <span> Sign Up</span>
+            </div>
         </form>
-        <div class="forget">
-            <span class="remember">Remember me</span>
-            <span class="need">need help?</span>
-        </div>
+        
 
     </div>
-</div>
-
- 
 </div>
 
     <footer>
@@ -77,9 +86,11 @@
                 <div class="menus">
                 <h1 class="main">Connect with us</h1>
                 <p class="sub">
-                  <span>  <img src="./assets/Icon.png" alt="">
-                    <img src="./assets/Icon (1).png" alt="">
-                    <img src="./assets/Group.png" alt=""></span>
+                    <span class="imgs">
+                  <span class="img">  <img src="./assets/Icon.png" alt=""></span>
+                  <span class="img">    <img src="./assets/Icon (1).png" alt=""></span>
+                  <span class="img">  <img src="./assets/Group.png" alt=""></span>
+                </span>
                 </p>
             </div>
             
