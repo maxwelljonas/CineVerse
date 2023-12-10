@@ -219,3 +219,171 @@ header {
    font-weight: 700;
    font-family: 'Raleway', sans-serif;
  }
+
+ .scroll {
+    display: flex;
+    background-color:  #121212;
+    height: 437px;
+    width: 100%;
+    gap: 2rem;
+    /* justify-content: space-between; */
+ }
+.scroll .a{
+  flex: 1;
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.pictures1 {
+  background-image: url(images/TheUpside_PosterArt.png);
+}
+.pictures2 {
+  background-image: url(images/MissHokusai_PosterArt.png);
+}
+.pictures3 {
+  background-image: url(images/TheKingsDaughter_PosterArt_191329216583.png);
+}
+.pictures4 {
+  background-image: url(images/Avengers.png);
+}
+.pictures5 {
+  background-image: url(images/After_PosterArt.png)
+}
+.faq {
+  height: 839px;
+  padding: 96px;
+  background-color: var(--BLACK-600);
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.faq .question h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFF;
+  text-align: start;
+}
+
+.faq .q {
+  height: 98px;
+  border: 2px solid white;
+  border-radius: 16px;
+  padding: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFF;
+}
+.explore {
+  height: 455px;
+  background-image: url(images/Rectangle\ 400.png);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #FFF; */
+    
+}
+.explore .container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.explore .container .text1 h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+.explore .container .text2 p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 19px;
+}
+.blue {
+  color: var(--A-NORMAL);
+  font-weight: bolder;
+}
+footer {
+  height: 387px;
+  background-color: var(--BLACK-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  color: white;
+}
+
+footer .footer-container1 {
+  display: flex;
+  gap: 1rem;
+}
+footer .footer-container1 .heading-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+footer .ft{
+  padding: 10px 0;
+}
+footer .heading {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+.foot {
+  width: 80%;
+}
+footer .footer-container1 .last{
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .footer-container1 .last .socials {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer-container2 {
+  padding-top: 30px;
+  border-top: 1px solid var(--BLACK-300);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container2 .bottomleft {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container2 .bottomleft .items {
+  padding: 0px 30px;
+}
+.footer-container2 .bottom {
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--A-NORMAL);
+}
+.footer-container2 .bottomleft .two {
+  border-right: 1px solid var(--BLACK-300);
+  border-left: 1px solid var(--BLACK-300);
+}
+footer a, a:visited , a:hover, a:active  {
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--A-NORMAL);
+  text-decoration: none;
+}
+
