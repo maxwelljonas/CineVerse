@@ -124,7 +124,6 @@ body{
 
 .num p{
     width: 5px;
-    flex-shrink: 0;
     color: #CCC4C8;
     text-align: center;
     font-family: 'Raleway' sans-serif;
@@ -134,10 +133,17 @@ body{
     line-height: normal;
     border-radius: 50%;
     border: 1px solid #fff;
-    margin: 20px;
-    padding: 1px 10px;
+    margin: 12px;
+    padding: 1px 9px;
     
 }
+
+.num p:nth-child(1) {
+   background-color: var(--A-DARK);
+   color: var(--BLACK-500);
+    font-weight: bold;
+}
+
 
 .num .line{
     width: 136px;
@@ -161,13 +167,13 @@ body{
 
 .form form{
     color: #fff;
-    width: 350px;
+    width: 550px;
     margin: 20px;
 }
 
 
 .form form input{
-    width: 350px;
+    width: 550px;
     height: 35px;
     color: #FFF;
     background-color: #0B0C0F;
@@ -176,11 +182,10 @@ body{
 
 .form form button{
     display: flex;
-    padding: 14px 160px;
+    width: 550px;
+    height: 35px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    align-self: stretch;
     border-radius: 4px;
     background: #0C8CE9;
     cursor: pointer;
