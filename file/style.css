@@ -156,6 +156,7 @@ header {
     margin-top: 20px;
     color: #FFF;
     font-weight: bolder;
+    font-size: 16px;
     background-color: var(--A-NORMAL);
     font-family: 'Raleway', sans-serif;
  }
