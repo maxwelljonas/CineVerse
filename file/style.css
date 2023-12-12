@@ -99,21 +99,22 @@ header {
     gap: 30px;
 }
  .sign button {
-    width: 183px;
+    width: 100px;
     height: 44px;
     border-radius: 4px;
-    border: 1px solid white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    font-family: 'Raleway', sans-serif;
     font-weight: bolder;
  }
  .sign .signup {
     background-color: var(--BLACK-500);
     color: var(--A-LIGHT);
+    box-shadow: 0px 0px 10px var(--A-NORMAL);
  }
  .sign .signin {
     background-color: var(--A-NORMAL);
-    border: none;
     color: #FFF;
+    box-shadow: 0px 0px 10px var(--A-NORMAL);
  }
  /* MAIN */
 
@@ -140,6 +141,8 @@ header {
  }
  .intro .intro-container .intro-text1 h1{
     font-weight: 350;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 28px;
  }
  .intro .intro-container .intro-text2 p{
    font-family: 'Raleway', sans-serif;
@@ -152,6 +155,7 @@ header {
     border: none;
     margin-top: 20px;
     color: #FFF;
+    font-weight: bolder;
     background-color: var(--A-NORMAL);
     font-family: 'Raleway', sans-serif;
  }
@@ -233,8 +237,8 @@ header {
   background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
 }
+
 .pictures1 {
   background-image: url(images/TheUpside_PosterArt.png);
 }
@@ -287,7 +291,6 @@ header {
     align-items: center;
     justify-content: center;
     /* color: #FFF; */
-    
 }
 .explore .container {
   width: 50%;
@@ -387,3 +390,193 @@ footer a, a:visited , a:hover, a:active  {
   text-decoration: none;
 }
 
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 36px;
+    width: 100vw;
+    padding: 0 20px;
+}
+  header img {
+    width: 82px;
+    height: 15px;
+  }
+
+.sign {
+  display: flex;
+  gap: 15px;
+}
+.sign button {
+  width: 75px;
+  height: 19px;
+  font-size: 10px;
+  font-weight: 400;
+  box-shadow: none;
+  border-radius: none;
+}
+.sign .signup {
+  box-shadow: 0px 0px 10px var(--A-NORMAL);
+}
+.intro {
+  height: 386px;
+  width: 100%;
+  padding-left: 80px;
+}
+.intro .intro-container {
+  width: 65%;
+  top: 20%;
+  left: 10%;
+  gap: 0.5rem;
+}
+.intro .intro-container .intro-text1 h1{
+  font-size: 20px;
+  font-weight: 700;
+}
+.intro .intro-container .intro-text2 p{
+  font-size: 16px;
+}
+.intro .intro-container button {
+  width: 96px;
+  height: 21px;
+  font-size: 12px ;
+}
+.hero {
+  height: 480px;
+  padding: 24px 24px;
+  background-color: var(--BLACK-500);
+}
+.intro2 {
+  width: 90%;
+  gap: 1rem;
+}
+.intro2 .intro2-container1 {
+  gap: 1rem;
+}
+.intro2 .intro2-container1 p{
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+.intro2 .intro2-container1 .payments {
+  gap: 1rem;
+}
+.intro2 .intro2-container1 .payments img {
+  height: 40px;
+  width: 40px;
+}
+.intro2 .intro2-container2 .first h1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.intro2 .intro2-container2 .light {
+  size: 14px;
+  line-height: 16.5px;
+}
+.intro2 .intro2-container2 .p-btn button {
+  width: 79px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+.scroll {
+  height: 150px;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.scroll .a{
+  height: 150px;
+  width: 220px;
+}
+.faq {
+  height: 380px;
+  padding: 20px 24px;
+  gap: 1rem;
+}
+.faq .question h1 {
+  font-size: 16px;
+  line-height: 20px;
+}
+.faq .q {
+  height: 44px;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.explore {
+  height: 370px;
+  padding: 15px;
+}
+.explore .container {
+  width: 100%;
+  gap: 1rem;
+}
+.explore .container .text1 h1 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+}
+footer {
+  padding: 20px;
+  height: 535px;
+  gap: 1.5rem;
+}
+footer img {
+  width: 44px;
+  height: 44px;
+}
+footer .footer-container1 {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  gap: none;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer .heading  h2{
+  font-size: 16px;
+  line-height: 24px;
+}
+footer .ft{
+  padding: 5px;
+}
+/*last*/
+
+footer .footer-container1 .last{
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-container2 {
+  display: flex;
+  width: 100%;
+  height: 82px;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: unset;
+}
+
+.footer-container2 .bottomleft .items {
+  padding: 0px 10px;
+}
+.footer-container2 .bottom {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 20px;
+}
+
+footer a, a:visited , a:hover, a:active  {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+}
