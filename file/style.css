@@ -94,6 +94,7 @@ header {
     justify-content: space-between;
     padding: 0 75px;
 }
+
 .sign {
     display: flex;
     gap: 30px;
@@ -116,8 +117,8 @@ header {
     color: #FFF;
     box-shadow: 0px 0px 10px var(--A-NORMAL);
  }
+ 
  /* MAIN */
-
  .intro {
     height: 839px;
     width: 100%;
@@ -255,44 +256,81 @@ header {
 .pictures5 {
   background-image: url(images/After_PosterArt.png)
 }
+
 .faq {
-  height: 839px;
-  padding: 96px;
-  background-color: var(--BLACK-600);
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
+	/* height: 839px; */
+	padding: 96px;
+	background-color: var(--BLACK-600);
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
 }
 .faq .question h1 {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 48px;
-  color: #FFF;
-  text-align: start;
+	font-family: "Libre Baskerville", serif;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	color: #fff;
+	text-align: start;
 }
 
 .faq .q {
-  height: 98px;
-  border: 2px solid white;
-  border-radius: 16px;
-  padding: 24px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #FFF;
+	cursor: pointer;
+	height: 98px;
+	border: 2px solid white;
+	border-radius: 16px;
+	padding: 24px;
+	font-family: "Raleway", sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	color: #fff;
+	/* margin-bottom: 16px; */
+	transition: background-color 0.3s ease;
 }
+
+.faq .q:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.faq .a {
+	display: none;
+	padding: 0;
+	background-color: #fff;
+	border-radius: 16px;
+	max-height: 0;
+	overflow: hidden;
+	transform: translateY(-13px);
+	/* margin-bottom: 16px; */
+	color: #000;
+	transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq .a.show {
+	display: block;
+	max-height: 200px; /* Adjust as needed */
+    padding: 24px; 
+}
+
 .explore {
-  height: 455px;
-  background-image: url(images/Rectangle\ 400.png);
-  background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* color: #FFF; */
+	height: 455px;
+	/* opacity: 0.24; */
+	background: linear-gradient(
+			360deg,
+			rgba(0, 0, 0, 0.5) 0%,
+			rgba(0, 0, 0, 0.7) 100%
+		),
+		url(images/Rectangle\ 400.png), lightgray 50% / cover no-repeat;
+	/* background-image: url(images/Rectangle\ 400.png); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	/* color: #FFF; */
 }
+
 .explore .container {
   width: 50%;
   display: flex;
