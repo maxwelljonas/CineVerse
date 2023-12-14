@@ -4,16 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Cineverse</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/file/css/style.css" />
 	</head>
 	<body>
 		<header>
 			<div class="logo">
-				<img src="./assets/logos/logo.svg" alt="logo" />
+				<a href="/file/">
+					<img src="./assets/logos/logo.svg" alt="logo" />
+				</a>
 			</div>
 			<div class="sign">
-				<button type="button" class="signup">Sign Up</button>
-				<button type="button" class="signin">Sign In</button>
+				<a href="/file/pages/signup.html">
+					<button type="button" class="signup">Sign Up</button>
+				</a>
+				<a href="/file/pages/signin.html">
+					<button type="button" class="signin">Sign In</button>
+				</a>
 			</div>
 		</header>
 
@@ -33,7 +39,9 @@
 							your convenience.
 						</p>
 					</div>
-					<button type="button">Get started</button>
+					<a href="/file/pages/signup.html">
+						<button type="button">Get started</button>
+					</a>
 				</div>
 			</div>
 
@@ -43,10 +51,20 @@
 					<div class="intro2-container1">
 						<p>Easy and flexible payment using your convenient channel</p>
 						<div class="payments">
-							<div class=""><img src="images/image 1.png" alt="" /></div>
-							<div class=""><img src="images/image 2.png" alt="" /></div>
-							<div class=""><img src="images/image 3.png" alt="" /></div>
-							<div class=""><img src="images/image 4.png" alt="" /></div>
+							<div>
+								<img
+									src="/file/assets/payments/mastercard.png"
+									alt="mastercard" />
+							</div>
+							<div><img src="/file/assets/payments/baxi.png" alt="baxi" /></div>
+							<div>
+								<img
+									src="/file/assets/payments/quickteller.png"
+									alt="quickteller" />
+							</div>
+							<div>
+								<img src="/file/assets/payments/verve.png" alt="verve" />
+							</div>
 						</div>
 					</div>
 					<div class="intro2-container2">
@@ -86,21 +104,61 @@
 
 			<!-- Faq -->
 			<div class="faq">
-				<div class="question">
-					<h1>Frequently Asked Questions</h1>
+				<div class="container">
+					<div class="question">
+						<h1>Frequently Asked Questions</h1>
+					</div>
+					<div class="q" data-target="q1"><p>What is Cineverse?</p></div>
+					<div class="a" id="q1">
+						<p>
+							Cineverse is a streaming platform that provides an extensive
+							collection of acclaimed TV shows, films, anime, documentaries, and
+							more, accessible on a multitude of internet-connected devices.
+							<br /><br />
+							With a single, affordable monthly subscription, you can indulge in
+							unlimited, uninterrupted viewing at your convenience—no
+							commercials. The platform constantly introduces fresh content,
+							with new TV shows and movies added each week, ensuring there's
+							always something exciting to explore.
+						</p>
+					</div>
+					<div class="q" data-target="q2"><p>How does billing work?</p></div>
+					<div class="a" id="q2">
+						<p>
+							Billing is processed on a monthly basis. You will be charged the
+							subscription fee automatically, and you can manage your billing
+							information through your account settings.
+						</p>
+					</div>
+					<div class="q" data-target="q3">
+						<p>Can I share my account with others?</p>
+					</div>
+					<div class="a" id="q3">
+						<p>
+							We offer different account profiles for family members or friends,
+							allowing each user to have a personalized experience within a
+							single subscription.
+						</p>
+					</div>
+					<div class="q" data-target="q4">
+						<p>What devices are supported?</p>
+					</div>
+					<div class="a" id="q4">
+						<p>
+							Our platform is compatible with a wide range of devices, including
+							smartphones, tablets, smart TVs, laptops, and desktop computers.
+						</p>
+					</div>
+					<div class="q" data-target="q5"><p>How do I cancel?</p></div>
+					<div class="a" id="q5">
+						<p>
+							Cineverse is adaptable. There are no binding contracts or
+							obligations. You can effortlessly terminate your account online
+							with just two clicks. No cancellation charges apply – commence or
+							conclude your account whenever you wish.
+						</p>
+					</div>
 				</div>
-				<div class="q" data-target="q1"><p>What is Cineverse?</p></div>
-				<div class="a" id="q1"><p>Cineverse is...</p></div>
-				<div class="q" data-target="q2"><p>How does billing work?</p></div>
-				<div class="a" id="q2"><p>Cineverse is...</p></div>
-				<div class="q" data-target="q3">
-					<p>Can I share my account with others?</p>
-				</div>
-				<div class="a" id="q3"><p>Cineverse is...</p></div>
-				<div class="q" data-target="q4"><p>What devices are supported?</p></div>
-				<div class="a" id="q4"><p>Cineverse is...</p></div>
-				<div class="q" data-target="q5"><p>How do I cancel?</p></div>
-				<div class="a" id="q5"><p>Cineverse is...</p></div>
 			</div>
 
 			<!-- Explore Page -->
@@ -122,6 +180,7 @@
 				</div>
 			</div>
 		</main>
+    
 		<footer>
 			<div class="footer-container1 foot">
 				<div class="heading-container">
@@ -178,5 +237,5 @@
 		</footer>
 	</body>
 
-  <script src="./JS/accordion.js"></script>
+	<script src="./JS/accordion.js"></script>
 </html>
