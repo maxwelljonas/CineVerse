@@ -140,17 +140,10 @@ header {
 	width: 699px;
 	display: flex;
 	flex-direction: column;
-
-	/* This is not necessary */
-	/* position: absolute;
-    top: 50%;
-    left: 10%; */
 	gap: 1rem;
 }
 
 .intro .intro-container .intro-text1 h1 {
-	/* This is not the font weight given */
-	/* font-weight: 350; */
 	font-family: Libre Baskerville sans-serif;
 	font-size: 40px;
 	font-style: normal;
@@ -245,7 +238,7 @@ header {
 	height: 437px;
 	width: 100%;
 	gap: 2rem;
-	/* justify-content: space-between; */
+	
 }
 .scroll .a {
 	flex: 1;
@@ -272,7 +265,6 @@ header {
 
 /* Faq */
 .faq {
-	/* height: 839px; */
 	padding: 96px;
 	background-color: var(--BLACK-600);
 	display: flex;
@@ -307,7 +299,6 @@ header {
 	font-size: 32px;
 	font-weight: 400;
 	color: #fff;
-	/* margin-bottom: 16px; */
 	transition: background-color 0.3s ease;
 }
 
@@ -325,7 +316,6 @@ header {
 	overflow: hidden;
 	transform: translateY(-13px);
 	font-family: "Raleway", sans-serif;
-	/* margin-bottom: 16px; */
 	color: #fff;
 	transition: max-height 0.3s ease, padding 0.3s ease;
 
@@ -344,7 +334,6 @@ header {
 
 .explore {
 	height: 455px;
-	/* opacity: 0.24; */
 	background: linear-gradient(
 			360deg,
 			rgba(0, 0, 0, 0.5) 0%,
@@ -359,7 +348,6 @@ header {
 	color: white;
 	align-items: center;
 	justify-content: center;
-	/* color: #FFF; */
 }
 
 .explore .container {
@@ -425,6 +413,16 @@ footer .footer-container1 .last .socials {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
+}
+.socialmediaicon {
+	width: 56px;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	border-radius: 8px;
+	background-color: #262626;
+	gap: 10px;
+	align-items: center;
 }
 .footer-container2 {
 	padding-top: 30px;
