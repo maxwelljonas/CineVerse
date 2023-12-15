@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@400;500;700&display=swap');
+
+:root {
+    /* PRIMARY COLORS */
+    --BLACK-50: #e7e7e7;
+    --BLACK-100:#b3b4b5;
+    --BLACK-200:#8f8f91;
+    --BLACK-300:#5c5c5e;
+    --BLACK-400:#3c3d3f;
+    --BLACK-500:#0b0c0f;
+    --BLACK-600:#0a0b0e; 
+    --BLACK-700:#08090b;
+    --BLACK-800:#060708;
+    --BLACK-900: #050506;
+    
+    /* SECONDARY COLORS */
+    --S-LIGHT: #FFF;
+    --S-LIGHT-HOVER : #FFF;
+    --S-LIGHT-ACTIVE: #FFF;
+    --S-NORMAL: #FFF;
+    --S-NORMAL-HOVER: #E6E6E6;
+    --S-NORMAL-ACTIVE: #CCC;
+    --S-DARK: #BFBFBF;
+    --S-DARK-HOVER: #999;
+    --S-DARK-ACTIVE: #737373;
+    --S-DARKER: #595959;
+
+    
+    /* ACCENT COLORS */
+    --A-LIGHT: #E7F4FD;
+    --A-LIGHT-HOVER : #DBEEFC;
+    --A-LIGHT-ACTIVE: #B4DBF8;
+    --A-NORMAL: #0C8CE9;
+    --A-NORMAL-HOVER: #0B7ED2;
+    --A-NORMAL-ACTIVE: #0A70BA;
+    --A-DARK: #0969AF;
+    --A-DARK-HOVER: #07548C;
+    --A-DARK-ACTIVE: #053F69;
+    --A-DARKER: #043152;
+
+    /* ERROR COLORS */
+    --E-LIGHT: #F9ECE8;
+    --E-LIGHT-HOVER : #F7E2DD;
+    --E-LIGHT-ACTIVE: #EEC3B9;
+    --E-NORMAL: #C73F1D;
+    --E-NORMAL-HOVER: #B3391A;
+    --E-NORMAL-ACTIVE: #9F3217;
+    --E-DARK: #952F16;
+    --E-DARK-HOVER: #772611;
+    --E-DARK-ACTIVE: #5A1C0D;
+    --E-DARKER: #46160A;
+
+    /* SUCCESS COLORS */
+    --SS-LIGHT: #EDF8EC;
+    --SS-LIGHT-HOVER : #E4F4E3;
+    --SS-LIGHT-ACTIVE: #C7E8C5;
+    --SS-NORMAL: #4BB543;
+    --SS-NORMAL-HOVER: #44A33C;
+    --SS-NORMAL-ACTIVE: #3C9136;
+    --SS-DARK: #388832;
+    --SS-DARK-HOVER: #2D6D28;
+    --SS-DARK-ACTIVE: #22511E;
+    --SS-DARKER: #1E3F17;
+
+    /* WARNING COLORS */
+    --W-LIGHT: #FFFAE6;
+    --W-LIGHT-HOVER : #FFF7D9;
+    --W-LIGHT-ACTIVE: #FFEFB0;
+    --W-NORMAL: #FFCC00;
+    --W-NORMAL-HOVER: #E6B800;
+    --W-NORMAL-ACTIVE: #CCA300;
+    --W-DARK: #BF9900;
+    --W-DARK-HOVER: #997A00;
+    --W-DARK-ACTIVE: #735C00;
+    --W-DARKER: #594700;
+
+        /* Colors */
+        --blueNormal : #0c8ce9;
+        --blueHover : #0b7ed2;
+        --black400 : #3c3d3f;
+        --white : #ffffff;
+    
+        --black : #050506;
+        --background : #0B0C0F;
+        --greyBg : #262626;
+    
+}
+
+/* Global Styling */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--background);
+}
+
+ul{
+    list-style: none;
+}
+
+h2,
+h3{
+    color: var(--white);
+}
+
+a{
+    text-decoration: none;
+}
+
+.categoryNav a,
+.footerContent a,
+.copyright
+{
+    color: var(--blueNormal);   
+}
+
+.flex{
+    display : flex;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+header a, 
+.showcaseText p,
+.showcaseText h1,
+.btnTxt,
+.categories h2,
+.copyright,
+.copyrightAndPolicy a,
+.footerLinkContainer h3,
+.footerLinkContainer a
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+.categoryNav a,
+.footerContent h3
+{
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* Header */
+
+header{
+    background: var(--black);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+
+}
+
+.headerContent,
+.icons .flex
+{
+    align-items: center;
+}
+
+.headerContent{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 26.5px 100px;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 187px;
+    height: 34px;
+}
+
+.hamburger{
+    display: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.headerLinks{
+    gap: 20px;
+    margin-left: 44px;
+    align-items: center;
+}
+
+.headerLinks li{
+    padding: 0px 5px;
+}
+
+.headerLinks li a{
+    color: var(--white);
+}
+
+.icons .flex{
+    gap: 29px;
+}
+
+.searchImg{
+    width: 22px;
+    height: 22px;
+}
+
+.notificationImg{
+    width: 20px;
+    height: 20px;
+}
+
+.dropdownImg{
+    width: 18px;
+    height: 12px;
+    padding: -5px;
+}
+
+/* Hero Section */
+
+.showcaseArea{
+    width: 100%;   
+    height: 540px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    background-image: url(/file/assets/images/container.PNG.png);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.showcaseText{
+    margin: 0 auto;
+    max-width: 900px;
+    margin-bottom: 30px;
+    color: var(--white);
+}
+
+.showcaseText h1{
+    margin-bottom: 10px;
+}
+
+.showcaseButtons{
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.showcaseBtn{
+    width: 160px;
+    height: 45px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.playBtn{
+    background: var(--blueNormal);
+}
+
+.infoBtn{
+    background: var(--black400);
+}
+
+.btnImg{
+    width: 25px;
+    height: 25px;
+}
+
+.btnTxt{
+
+    color: var(--white);
+}
+
+
+/* Movie Recommendations Section */
+
+.categoryNav a{
+    font-size: 13px; 
+}
+
+.categoryNav{
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mgTop{
+    margin-top: 50px;
+}
+
+.link{
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.arrowImg{
+    width: 8px;
+    height: 15px;
+}
+
+.movieRecommendationContent{
+    width: 70%;
+    margin: 50px auto;
+}
+
+.movieContainer{
+    width: 190px;
+    height: 270px;
+}
+
+.categoryItem{
+    justify-content: space-between;
+}
+
+
+/* Footer Section */
+
+
+.footerContent{
+    background: var(--black);
+    padding: 100px 100px 30px;
+}
+
+
+.footerLinkContainer{
+    justify-content: space-between;
+}
+
+.footerLinkContainer h3{
+    margin-bottom: 20px;
+}
+
+.footerLinkContainer ul li{
+    margin: 10px 0px 10px;
+}
+
+.footerLinkContainer ul li a,
+.copyright,
+.copyrightAndPolicy a
+{
+    font-size: 13px;
+}
+
+.socials{
+    justify-content: space-between;
+}
+
+.imgBg{
+    width: 40px;
+    height: 40px;
+    background: var(--greyBg);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.facebookImg, .linkedlnImg{
+    width: 24px;
+    height: 20px;
+}
+
+.xImg{
+    width: 24px;
+    height: 22px;
+}
+
+.copyrightAndPolicy{
+    margin-top: 40px;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--greyBg);
+}
+
+.copyrightAndPolicy li{
+    padding: 0px 10px 0px;
+}
+
+.specialLink{
+    border-left: 1px solid var(--greyBg);
+    border-right: 1px solid var(--greyBg);
+}
+
+
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width : 1083px) {
+    .movieContainer{
+        width: 160px;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 950px)
+{
+    .headerLinks,
+    .notificationLink,
+    .dropdownLink
+    {
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .showcaseText{
+        max-width: 700px;
+    }
+
+    .movieContainer{
+        width: 140px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 850px)
+{
+    .headerContent{
+        padding: 20px 40px;
+    }
+
+    .showcaseArea{
+        margin-bottom: 290px;
+    }
+
+    .showcaseText,
+    .showcaseButtons
+    {
+        position: relative;
+        top: 250px;
+    }
+
+    .movieContainer{
+        width: 120px;
+        height: 200px;
+    }
+
+    .footerLinkContainer{
+      display: block;
+      align-items: start;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .socialLinks,
+    .helpLinks,
+    .aboutLinks,
+    .showsLinks,
+    .moviesLinks,
+    .homeLinks
+    {
+        width: 40%;
+    }
+
+    .flex2{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footerContent h3{
+        font-size: 15px;
+    }
+
+    .footerLinkContainer ul li a,
+    .copyright,
+    .copyrightAndPolicy a
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .logo{
+        width: 82px;
+        height: 15px;
+    }
+
+    .showcaseText p{
+        font-size: 14px;
+    }
+
+    .showcaseText{
+        max-width: 400px;
+    }
+
+    .movieRecommendationContent,
+    .footerLinkContainer,
+    .copyrightAndPolicy
+    {
+        width: 90%;
+    }
+
+    .flex2{
+        justify-content: flex-start;
+    }
+
+    .footerContent{
+        padding: 100px 0px 30px;
+    }
+
+    .socials{
+        justify-content: start;
+        gap: 20px;
+    }
+
+    .copyrightAndPolicy{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin: 0 auto;
+        margin-top: 40px;
+        gap: 10px;
+    }
+
+    .rmPadding{
+        padding: 0px 10px 0px 0px !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .movieContainer{
+        width: 100px;
+        height: 180px;
+    }
+
+    .categoryNav h2{
+        font-size: 17px;
+    }
+
+    .showcaseBtn p{
+        font-size: 13px;
+    }
+
+    .showcaseBtn{
+        width: 140px;
+        height: 38px;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .movieContainer{
+        width: 80px;
+        height: 160px;
+    }
+}
+
