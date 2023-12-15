@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-
-
-
 *{ 
     margin: 0;
     padding: 0;
@@ -138,27 +135,43 @@ header {
   align-items: center;
 }
 
-.num{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.num {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.num p{
-  width: 5px;
-  color: #CCC4C8;
-  text-align: center;
-  font-family: 'Raleway' sans-serif;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  margin: 12px;
-  padding: 1px 9px;
-  
+.num svg {
+  margin-right: 10px;
 }
+
+.num p, .num img {
+	width: 30px;
+	height: 30px;
+	color: #ccc4c8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: "Raleway" sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	margin: 12px;
+	padding: 1px 9px;
+	cursor: pointer;
+}
+
+.num p.num-2, .num img {
+	background-color: var(--A-DARK);
+	color: var(--BLACK-500);
+	font-weight: bold;
+	border: none;
+}
+
 .num-cicle{ 
   width: 23px;
   text-align: center;
