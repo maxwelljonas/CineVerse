@@ -196,47 +196,6 @@ header .icons {
 	box-shadow: 0px 0px 10px var(--A-NORMAL);
 }
 
-/* header{
-    background: var(--black);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 3;
-
-} */
-
-/* .headerContent,
-.icons .flex
-{
-    align-items: center;
-}
-
-.headerContent{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 26.5px 100px;
-    justify-content: space-between;
-}
-
-.logo{
-    width: 187px;
-    height: 34px;
-}
-
-.hamburger{
-    display: none;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.headerLinks li{
-    padding: 0px 5px;
-}
-
-.headerLinks li a{
-    color: var(--white);
-} */
 
 .icons .flex {
 	gap: 29px;
@@ -269,7 +228,7 @@ header .icons {
 	flex-direction: column;
 	justify-content: flex-end;
 	text-align: center;
-	background-image: url(/file/assets/background/container.png);
+	background-image: url(../assets/background/container.png);
 	background-size: cover;
 	background-origin: border-box;
 	background-position: center;
@@ -381,72 +340,6 @@ header .icons {
 	gap: 32px;
 }
 
-/* Footer Section */
-
-/* .footerContent {
-	background: var(--black);
-	padding: 100px 100px 30px;
-}
-
-.footerLinkContainer {
-	justify-content: space-between;
-}
-
-.footerLinkContainer h3 {
-	margin-bottom: 20px;
-}
-
-.footerLinkContainer ul li {
-	margin: 10px 0px 10px;
-}
-
-.footerLinkContainer ul li a,
-.copyright,
-.copyrightAndPolicy a {
-	font-size: 13px;
-}
-
-.socials {
-	justify-content: space-between;
-}
-
-.imgBg {
-	width: 40px;
-	height: 40px;
-	background: var(--greyBg);
-	justify-content: center;
-	align-items: center;
-	border: none;
-	border-radius: 5px;
-}
-
-.facebookImg,
-.linkedlnImg {
-	width: 24px;
-	height: 20px;
-}
-
-.xImg {
-	width: 24px;
-	height: 22px;
-}
-
-.copyrightAndPolicy {
-	margin-top: 40px;
-	padding-top: 20px;
-	justify-content: space-between;
-	align-items: center;
-	border-top: 1px solid var(--greyBg);
-}
-
-.copyrightAndPolicy li {
-	padding: 0px 10px 0px;
-}
-
-.specialLink {
-	border-left: 1px solid var(--greyBg);
-	border-right: 1px solid var(--greyBg);
-} */
 
 footer {
 	height: 387px;
