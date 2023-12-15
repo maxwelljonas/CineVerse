@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* PRIMARY COLORS */
+    --BLACK-50: #e7e7e7;
+    --BLACK-100:#b3b4b5;
+    --BLACK-200:#8f8f91;
+    --BLACK-300:#5c5c5e;
+    --BLACK-400:#3c3d3f;
+    --BLACK-500:#0b0c0f;
+    --BLACK-600:#0a0b0e; 
+    --BLACK-700:#08090b;
+    --BLACK-800:#060708;
+    --BLACK-900: #050506;
+    
+    /* SECONDARY COLORS */
+    --S-LIGHT: #FFF;
+    --S-LIGHT-HOVER : #FFF;
+    --S-LIGHT-ACTIVE: #FFF;
+    --S-NORMAL: #FFF;
+    --S-NORMAL-HOVER: #E6E6E6;
+    --S-NORMAL-ACTIVE: #CCC;
+    --S-DARK: #BFBFBF;
+    --S-DARK-HOVER: #999;
+    --S-DARK-ACTIVE: #737373;
+    --S-DARKER: #595959;
+
+    
+    /* ACCENT COLORS */
+    --A-LIGHT: #E7F4FD;
+    --A-LIGHT-HOVER : #DBEEFC;
+    --A-LIGHT-ACTIVE: #B4DBF8;
+    --A-NORMAL: #0C8CE9;
+    --A-NORMAL-HOVER: #0B7ED2;
+    --A-NORMAL-ACTIVE: #0A70BA;
+    --A-DARK: #0969AF;
+    --A-DARK-HOVER: #07548C;
+    --A-DARK-ACTIVE: #053F69;
+    --A-DARKER: #043152;
+
+    /* ERROR COLORS */
+    --E-LIGHT: #F9ECE8;
+    --E-LIGHT-HOVER : #F7E2DD;
+    --E-LIGHT-ACTIVE: #EEC3B9;
+    --E-NORMAL: #C73F1D;
+    --E-NORMAL-HOVER: #B3391A;
+    --E-NORMAL-ACTIVE: #9F3217;
+    --E-DARK: #952F16;
+    --E-DARK-HOVER: #772611;
+    --E-DARK-ACTIVE: #5A1C0D;
+    --E-DARKER: #46160A;
+
+    /* SUCCESS COLORS */
+    --SS-LIGHT: #EDF8EC;
+    --SS-LIGHT-HOVER : #E4F4E3;
+    --SS-LIGHT-ACTIVE: #C7E8C5;
+    --SS-NORMAL: #4BB543;
+    --SS-NORMAL-HOVER: #44A33C;
+    --SS-NORMAL-ACTIVE: #3C9136;
+    --SS-DARK: #388832;
+    --SS-DARK-HOVER: #2D6D28;
+    --SS-DARK-ACTIVE: #22511E;
+    --SS-DARKER: #1E3F17;
+
+    /* WARNING COLORS */
+    --W-LIGHT: #FFFAE6;
+    --W-LIGHT-HOVER : #FFF7D9;
+    --W-LIGHT-ACTIVE: #FFEFB0;
+    --W-NORMAL: #FFCC00;
+    --W-NORMAL-HOVER: #E6B800;
+    --W-NORMAL-ACTIVE: #CCA300;
+    --W-DARK: #BF9900;
+    --W-DARK-HOVER: #997A00;
+    --W-DARK-ACTIVE: #735C00;
+    --W-DARKER: #594700;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--BLACK-500);
+}
+
+img {
+    display: block;
+}
+/* NAVIGATION */
+header {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 0 75px;
+
+}
+.sign button {
+  width: 183px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+.sign .signout {
+  background-color: var(--BLACK-500);
+  color: var(--A-LIGHT);
+}
+
+
+.wel-container {
+    text-align: center;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.wel-second-contaier {
+    /* background-color: blue; */
+    padding: 0;
+    width: 393.5px;
+    height: 400px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.para-holder {
+    display: flex;
+    border-radius: 6px;
+    background: #1A1A1A;
+}
+
+.paragraph-title {
+    width: 350px;
+    margin: auto;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.paragraph-title > p {
+    font-size: 16px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.paragraph-title > .setup{
+    color: #0C8CE9;
+    width: 246px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+   
+}
+
+.para-content {
+    text-align: left;
+    /* margin-top: 1rem; */
+    margin-bottom: 20px;
+}
+
+.para-content > p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+.wel-content{
+    font-family: barlow;
+    font-family: Libre Baskerville;
+    margin-left: 5px;
+    color: #0C8CE9;
+}
+
+.wel-content > h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 5px 0 10px;
+}
+
+form{
+    width: 100%;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form-container{
+    display: block;
+}
+
+.form-container > input{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border-color: #0C8CE9;
+    margin-bottom: 20px;
+    background-color: darkgrey;
+    border-radius: 6px;
+    background: var(--BLACK-400);
+}
+
+.next-btn{
+    font-family: Raleway;
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button{
+    color: #fff;
+    background: #0C8CE9;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+
+/* --------------footer css--------------------- */
+footer {
+    height: 387px;
+    background-color: var(--BLACK-900);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    color: white;
+  }
+  
+  footer .footer-container1 {
+    display: flex;
+    gap: 1rem;
+  }
+  footer .footer-container1 .heading-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .ft{
+    padding: 10px 0;
+  }
+  footer .heading {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+  }
+  .foot {
+    width: 80%;
+  }
+  footer .footer-container1 .last{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .footer-container1 .last .socials {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer-container2 {
+    padding-top: 30px;
+    border-top: 1px solid var(--BLACK-300);
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-container2 .bottomleft {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-container2 .bottomleft .items {
+    padding: 0px 30px;
+  }
+  .footer-container2 .bottom {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--A-NORMAL);
+  }
+  .footer-container2 .bottomleft .two {
+    border-right: 1px solid var(--BLACK-300);
+    border-left: 1px solid var(--BLACK-300);
+  }
+  footer a, a:visited , a:hover, a:active  {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--A-NORMAL);
+    text-decoration: none;
+  }
+  .form-container > img {
+    position: absolute;
+    margin: 4px;
+    gap: 6px;
+    padding: 2px;
+    /* background: red; */
+  }
+  .input-field > img {
+    background-color: red;
+  }
+ 
