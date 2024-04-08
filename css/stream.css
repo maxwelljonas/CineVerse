@@ -112,7 +112,7 @@ body{
 
 .video-player {
     position: relative;
-    width: 50%;
+    width: 100vw;
 }
 
 .video-player #myvideo {

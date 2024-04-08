@@ -154,7 +154,7 @@ header {
 	align-items: center;
 	text-align: center;
 	font-family: "Raleway" sans-serif;
-	font-size: 13px;
+	font-size: 16px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -233,7 +233,7 @@ header {
     font-style: normal;
     font-weight: 200px;
     font-family: 'Raleway', sans-serif;
-
+    margin-bottom: 0.5rem;
 }
 
 .image-icon {
@@ -261,6 +261,7 @@ header {
     font-style: normal;
     font-weight: 700px;
     line-height: normal;
+    padding-bottom: 10px;
 }
 
 table{ 
@@ -273,7 +274,7 @@ table{
 
 .popular-span { 
     display: inline-flex;
-    padding: 6px 10px;
+    padding: 4px 8px;
     align-items: flex-start;
     gap: 1px;
     border-radius: 2px;
@@ -308,11 +309,11 @@ th, td {
     color: #F1F1F1;
     text-align: start;
     width: 85%;
-    font-size: 15px;
-    font-weight: 100;
+    font-size: 16px;
+    font-weight: 300;
     margin: 20px;
     font-family: 'Raleway', sans-serif;
-
+    padding: 35px 0;
 }
 
 .card-container { 
@@ -355,6 +356,10 @@ th, td {
     margin-block-start: 0;
     margin-block-end: 0;
 }
+.naira {
+  font-family: 'Raleway', sans-serif;
+
+}
 h6 { 
     font-size: 10px;
     font-weight: 100;
@@ -385,7 +390,7 @@ h6 {
 
 }
 .btn:hover{ 
-    color: #262626;
+    background-color: #262626;
     transition: 0.7s;
 }
 footer {

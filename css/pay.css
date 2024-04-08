@@ -117,8 +117,8 @@ header {
 .steps{
     display: flex;
     align-items: center;
-    color: var(--A-LIGHT);
-    width: 30%;
+    color: #CCC4C8;
+    width: 70%;
     margin: 2rem auto;
     justify-content: center;
     gap: 0.5rem;
@@ -142,19 +142,21 @@ header {
 .setup-content > h3{
     color: var(--A-LIGHT);
     text-align: center;
-    font-size: 20px;
+    font-size: 32px;
+    font-family: "Libre Baskerville", serif;
 }
 .setup-content > .icons{
     display: flex;
     justify-content: center;
     padding: 2rem 0rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .form-container{
     padding: 0rem 6rem;
     display: flex;
     justify-content: space-between;
+    font-family: "Raleway", sans-serif;
 }
 .form-left{
     width: 40%;
@@ -163,8 +165,8 @@ header {
 }
 .form-right{
     width: 60%;
-    padding: 6rem 0rem 2rem;
-    font-size: 18px;
+    padding: 3.5rem 0rem 2rem;
+    font-size: 16px;
     color: var(--A-LIGHT-HOVER);
 }
 span.privacy{
@@ -173,10 +175,10 @@ span.privacy{
 .membership-btn{
     background-color: var(--A-NORMAL);
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--A-LIGHT);
     padding: 0.7rem 2rem;
-    width: 30%;
+    width: 35%;
     border-radius: 5px;
     margin: 1.5rem 0rem;
 }
@@ -199,11 +201,17 @@ span.privacy{
     border: 1px solid var(--BLACK-200);
     height: 3rem;
     border-radius: 4px;
+    padding: 0rem 1rem;
     margin: 0.5rem 0rem;
+    border: 1px solid #FFFFFF;
 }
 .form-field > label{
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 700;
+}
+.e-date > label, .cvv > label{
+  font-size: 16px;
+  font-weight: 700;
 }
 .form-field > input{
     width: 100%;
@@ -213,6 +221,19 @@ span.privacy{
     border-radius: 4px;
     padding: 0rem 1rem;
     margin: 0.5rem 0rem;
+    border: 1px solid #FFFFFF;
+}
+.form-field > input::placeholder, .form-field >input:not(:placeholder-shown)  {
+  font-weight: 400;
+  font-size: 14px;
+	font-family: "Raleway", sans-serif;
+  color: #FFF;
+}
+.e-date > input::placeholder, .cvv > input::placeholder , .e-date > input:not(:placeholder-shown) ,.cvv > input:not(:placeholder-shown){
+  font-weight: 400;
+  font-size: 14px;
+	font-family: "Raleway", sans-serif;
+  color: #FFF;
 }
 
 /* --------------footer css--------------------- */
