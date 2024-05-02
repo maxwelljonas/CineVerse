@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 body{
+    padding-top: 2rem;
     background-color:rgba(11, 12, 15, 255); 
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Libre Baskerville", serif;
     width: 100%;
 }
 nav{
@@ -39,19 +40,19 @@ nav{
 }
 .header{
     color: white;
-    font-weight: 400;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 32px;
     margin-top: 30px;
-
+    align-self: center;
 }
 span{
     font-family: sans-serif;
+    font-size: 20px;
     color: white;
-    font-size: 1.8rem;
-    font-weight: 400;
     display: flex;
     justify-content: start;
     margin-bottom: 20px;
+	font-family: "Libre Baskerville", serif;
 }
 
 
@@ -64,8 +65,6 @@ button{
     margin-top: 30px;
     text-align: center;
     justify-content: center;
-    
-
 }
 
 .selector select{
@@ -77,11 +76,11 @@ button{
     width: 400px;
     border-radius: 2px;
     padding: 10px;
-    font-size: 13px;
+    font-size: 14px;
      font-weight: 400;
      appearance: none; 
      cursor: pointer;
-     font-family: 'overpass', sans-serif;
+     font-family: "Raleway", sans-serif;
 }
 .selector{
     position: relative;
@@ -91,7 +90,6 @@ option{
     line-height: 20px;
     font-size: 16px;
 }
-
 
 .selector::after{
     content: '\25BC' ;
