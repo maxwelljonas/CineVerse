@@ -87,10 +87,18 @@ body {
   background-attachment: fixed;
   */
 
-	background: url(/assets/background/layout.png),
+	background: url(../assets/background/layout.png),
 	#4a4a4a 0px -0.25px / 100% 100.059% no-repeat;
+
+	/* background: linear-gradient(
+		360deg,
+		rgba(0, 0, 0, 0.5) 0%,
+		rgba(0, 0, 0, 0.7) 100%
+	), */
+	/* url("../assets/background/layout.png"), lightgray 50% / cover no-repeat; */
+	
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 /* NAVIGATION */
